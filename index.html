@@ -1,17 +1,49 @@
 
 <html> 
-        <head>    
+        <head>  
+            <!-- sets text display in window tab -->   
             <title>Hayley Allard-Raucci</title>
             <style> 
-              img {
-                border-radius: 50%; 
-            }
-            
-            </style>  
-            <a href = "about.html"> here</a>
+                /* ovals out photo */
+                img {
+                    border-radius: 50%; 
+                }
+                /* top navigation bar */
+                .topnav {
+                    overflow: hidden;
+                    background-color: black;
+                }
+                /* format of text on bar*/
+                .topnav a {
+                    float: left;
+                    display: block;
+                    color: white;
+                    text-align: center;
+                    padding: 14px 16px;
+                    text-decoration: none;
+                }
+                /* mouse hover when its not the active tab */
+                .topnav a:hover:not(.active) {
+                    background-color:white;
+                    color: black;
+                }
+                /* sets format of active tab */
+                .topnav .active {
+                    background-color: #A3FFD4;
+                    color: black;
+                }
+
+            </style>
         </head>  
         <body>    
-            <p>My first website will be coming out soon.. </p>
+            <div class="topnav">
+                <!-- includes tabs that user can flip through-->
+                <a class = "active" href="#home"> Home</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+                <a href="#">Resume</a>
+                <a href="#">Experience in Depth</a>
+            </div> 
             <img src="/Pictures/Professional.JPG" style="width:250px;height:300px;"/>
         </body>
     </html>
