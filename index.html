@@ -11,13 +11,13 @@
                 /* top navigation bar */
                 .topnav {
                     overflow: hidden;
-                    background-color: black;
+                    background-color: #A3FFD4;
                 }
                 /* format of text on bar*/
                 .topnav a {
                     float: left;
                     display: block;
-                    color: white;
+                    color: black;
                     text-align: center;
                     padding: 14px 16px;
                     text-decoration: none;
@@ -29,8 +29,53 @@
                 }
                 /* sets format of active tab */
                 .topnav .active {
-                    background-color: #A3FFD4;
-                    color: black;
+                    background-color: black;
+                    color: white;
+                }
+                /* unequal columns */ 
+                .column {
+                    float: left;
+                    padding: 15px;
+                }
+                /* column small left side content */
+                .left {
+                    width: 25%;
+                }
+                /* column main content on page */
+                .right {
+                    margin-left: 25%;
+                }
+                /* center words, pics */
+                .center {
+                    display: block;
+                    margin-left: auto;
+                    margin-right: auto;
+                    width: 50%
+                }
+                /* clear floats after columns */
+                .row:after{
+                    content: "";
+                    display: table;
+                    clear: both;
+                }
+                /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+                @media screen and (max-width:600px) {
+                    .column.side, .column.main {
+                        width: 100%;
+                    }
+                }
+                /* set everything on page to same font */                   
+                html, body, h1, h2, h3, h4, h5, h6 {
+                    font-family: "Lucida Console", Monaco, monospace;
+                    font-style: normal;
+                }
+                /* center text in header */
+                h2 {
+                    text-align: center;
+                }
+                /* center other text */
+                p.main {
+                    text-align: center;
                 }
 
             </style>
@@ -39,12 +84,32 @@
             <div class="topnav">
                 <!-- includes tabs that user can flip through-->
                 <a class = "active" href="#home"> Home</a>
-                <a href="#">About</a>
-                <a href="#">Contact</a>
-                <a href="#">Resume</a>
-                <a href="#">Experience in Depth</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+                <a href="#resume">Resume</a>
+                <a href="#experience">Experience in Depth</a>
             </div> 
-            <img src="/Pictures/Professional.JPG" style="width:250px;height:300px;"/>
+            <!-- start multi column -->
+            <div class="row">
+                <!-- start left side of the column -->
+                <div class="column left">
+                    <!-- insert selfie -->
+                    <img src="/Pictures/Professional.JPG" style="width:250px;height:300px;" class="center">
+                    <!-- header -->
+                    <h2> Quick Insight </h2>
+                    <!-- basic info about me -->
+                    <p class="main"> Hello! My name is Hayley Allard-Raucci. I am currently a 
+                        senior at the University of Connecticut, majoring in Computer Science &
+                        Engineering and minoring in Mathematics. I spend my free time either swimming,
+                        running, or playing Sims. 
+                    </p>
+                </div>
+                <!-- start bulk of content, bigger column -->
+                <div class="column right">
+                    <!-- header -->
+                    <h2> Life as a Senior </h2>
+                </div>
+            </div>
         </body>
     </html>
     
