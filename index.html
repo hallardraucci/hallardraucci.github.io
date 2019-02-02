@@ -3,91 +3,28 @@
         <head>  
             <!-- sets text display in window tab -->   
             <title>Hayley Allard-Raucci</title>
-            <style> 
-                /* ovals out photo */
-                img {
-                    border-radius: 50%; 
-                }
-                /* top navigation bar */
-                .topnav {
-                    overflow: hidden;
-                    background-color: #A3FFD4;
-                }
-                /* format of text on bar*/
-                .topnav a {
-                    float: left;
-                    display: block;
-                    color: black;
-                    text-align: center;
-                    padding: 14px 16px;
-                    text-decoration: none;
-                }
-                /* mouse hover when its not the active tab */
-                .topnav a:hover:not(.active) {
-                    background-color:white;
-                    color: black;
-                }
-                /* sets format of active tab */
-                .topnav .active {
-                    background-color: black;
-                    color: white;
-                }
-                /* unequal columns */ 
-                .column {
-                    float: left;
-                    padding: 15px;
-                }
-                /* column small left side content */
-                .left {
-                    width: 25%;
-                }
-                /* column main content on page */
-                .right {
-                    margin-left: 25%;
-                }
-                /* center words, pics */
-                .center {
-                    display: block;
-                    margin-left: auto;
-                    margin-right: auto;
-                    width: 50%
-                }
-                /* clear floats after columns */
-                .row:after{
-                    content: "";
-                    display: table;
-                    clear: both;
-                }
-                /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-                @media screen and (max-width:600px) {
-                    .column.side, .column.main {
-                        width: 100%;
-                    }
-                }
-                /* set everything on page to same font */                   
-                html, body, h1, h2, h3, h4, h5, h6 {
-                    font-family: "Lucida Console", Monaco, monospace;
-                    font-style: normal;
-                }
-                /* center text in header */
-                h2 {
-                    text-align: center;
-                }
-                /* center other text */
-                p.main {
-                    text-align: center;
-                }
-
-            </style>
+            <link rel="stylesheet" href="homeStyles.css">
         </head>  
-        <body>    
+        <body> 
+            <div class="header">
+                <h1> Intelligent Header </h1>
+            </div>   
             <div class="topnav">
                 <!-- includes tabs that user can flip through-->
-                <a class = "active" href="#home"> Home</a>
+                <a class = "active" href="index.html"> Home</a>
                 <a href="#about">About</a>
                 <a href="#contact">Contact</a>
-                <a href="#resume">Resume</a>
-                <a href="#experience">Experience in Depth</a>
+                <a href="/Resume/resume.pdf">Resume</a>
+                <!-- allows users to hover over button and have drop down content to choose-->
+                <div class="dropdown">
+                    <button class="dropbtn"> Experience in Depth</button>
+                    <div class="dropdown-content">
+                        <a href="#">IT Day-Ahead</a>
+                        <a href="#">Operations Performance, Training & Integration</a>
+                        <a href="#">Data Engineer</a>
+                        <a href="#">Energy Load Forecasting Project</a>
+                    </div>
+                </div>
             </div> 
             <!-- start multi column -->
             <div class="row">
@@ -108,6 +45,22 @@
                 <div class="column right">
                     <!-- header -->
                     <h2> Life as a Senior </h2>
+                    <p class ="main"> For starters, I am only taking two classes
+                        to finish off my requirements for graduation this May. I am
+                        enrolled in Digital Systems Design and Senior Design. Senior Design consists of
+                        a project sponsored by either UConn or an industry. I am working with three others
+                        on Energy Load Forecasting sponsored by <a href="https://www.powwr.com/">POWWR</a>. 
+                        The goal of this project is to use machine learning to produce a model that will
+                        predict energy consumption strictly using recorded hourly usage and weather data from
+                        the past.
+                    </p>
+                    <p class="main">
+                        When I am not at school, I am at my internship at 
+                        <a href="https://www.iso-ne.com/">ISO New England</a>. I have been interning here
+                        since June 2018. I started in their IT Day-Ahead Support team located in Holyoke, MA
+                        but, now that I am back in Connecticut I have moved to their Operations Performance, Integration 
+                        and Training team in Windsor, CT. 
+                    </p>
                 </div>
             </div>
         </body>
