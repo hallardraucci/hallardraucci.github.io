@@ -18,7 +18,9 @@ img {
     color: black;
     text-align: center;
     padding: 14px 16px;
+    transition: all .5s ease;
     text-decoration: none;
+    border-right: 1px solid black;
 }
 .dropdown {
     float:left;
@@ -30,10 +32,12 @@ img {
     outline: none;
     color: black;
     padding: 14px 16px;
+    transition: all .5s ease;
     background-color: inherit;
     font-family: inherit;
     font-size: inherit;
     margin: 0;
+    border-right: 1px solid black;
 }
 /* mouse hover when its not the active tab */
 .topnav a:hover:not(.active), .dropdown:hover .dropbtn {
@@ -42,7 +46,10 @@ img {
 }
 /* display format */
 .dropdown-content {
-    display: none;
+    display: block;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .5s ease-in-out;
     position: absolute;
     background-color: #f9f9f9;
     min-width: 160px;
@@ -57,13 +64,15 @@ img {
     text-decoration: none;
     display: block;
     text-align: left;
+    border-right: none;
 }
 /* color on hover of dropdown */
 .dropdown-content a:hover {
     background-color: #ddd;
 }
 .dropdown:hover .dropdown-content {
-    display: block;
+    opacity: 1;
+    visibility: visible;
 }
 /* sets format of active tab */
 .topnav .active {
