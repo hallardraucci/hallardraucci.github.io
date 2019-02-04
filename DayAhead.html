@@ -5,14 +5,14 @@
     </head>  
     <body>    
         <div class="header">
-            <h1> Intelligent Header </h1>
+            <h1> ISO New England </h1>
         </div>   
         <div class="topnav">
             <!-- includes tabs that user can flip through-->
             <a href="index.html"> Home</a>
             <a href="about.html">About</a>
             <a href="contact.html">Contact</a>
-            <a href="/Resume/resume.pdf">Resume</a>
+            <a href="/Resume/resume.pdf" target="_blank">Resume</a>
             <!-- allows users to hover over button and have drop down content to choose-->
             <div class="dropdown">
                 <button class="dropbtn active"> Experience in Depth</button>
@@ -24,5 +24,39 @@
                 </div>
             </div>
         </div> 
+        <h2> 
+            June 2018 - August 2018
+            <img src="/Pictures/Final Presentations.jpg" style="width:650px;height:300px;" class="center">
+        </h2>
+        <div class="column left">
+            <h2> Meet the Day-Ahead Interns!</h2>
+            <img src="/Pictures/DayAheadInterns.jpeg" style="width:300px;height:250px;" class="center">
+            <p class="main"> From left to right: Hayley Allard-Raucci, David Koleczek, Meghan Podlaski </p>
+        </div>
+        <div class="column right">
+            <p class="main"> My first internship was with ISO New England in their IT Day-Ahead Support Team. ISO New
+                England is a not-for-profit organizaton that operates the power grids, ensuring reliable flow of energy.
+                Day-Ahead market is for energy distributers to supply a set price the day before for their generators
+                to run as needed. As an intern I worked closely on their Solar PV project. The increase in solar panels
+                have made it difficult for accurate load forecasting. The goal of this project was to incorporate data from 
+                outside vendors to improve this accuracy. 
+            </p>
+            <p class="main"> The Solar PV team consisted of me and 6 other full time employees. We had daily scrum meetings 
+                where we would go over our current work and any blockers, if any. I created an entity relationship diagram 
+                of the Postgres database for this project that we used during our meetings. I mainly programmed in Python and Java
+                but also got some exposure in SQL and HTML/CSS. At first, I coded in Python a program that outputs the sunset and sunrise
+                for the eight load zones (aggregations of specific points on the transmission system) for a given start and end date. 
+                To ensure my program was accurate, I used a credited website to compare the outputs of my program. I wrote documentation 
+                on the program, running 96 test cases with screen shots. Once this was completed, the CSV outputs were uploaded
+                to the Postgres Database, where it was used to filter out bad data. The data was considered bad if the time stamp was
+                marked either before or after daylight. I later then coded this program again in Java for future use. 
+            </p>
+            <p class="main"> Another program I designed in Python was to manipulate CSV files into proper format. We were given CSV files
+                from the vendors that would not match the Database layout. This code would take a CSV as an input and format it properly
+                to match the Database and allow users to upload this file without any issues. Later, I then reprogrammed this design in 
+                Java for future use. 
+
+            </p>
+        </div>
     </body>
 </html>
