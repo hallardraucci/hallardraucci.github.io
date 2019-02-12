@@ -2,14 +2,11 @@
     background-color: #A3FFD4;
     padding: 5px;
 }
-/* ovals out photo */
-.img2 {
-    border-radius: 50%; 
-}
 /* top navigation bar */
 .topnav {
     overflow: hidden;
     background-color: #A3FFD4;
+
 }
 /* navigation links */
 .topnav a {
@@ -87,27 +84,47 @@
 }
 /* column small left side content */
 .left {
-    width: 25%;
+    float: left;
+    width: 30%;
+    box-sizing: border-box;
 }
 /* column main content on page */
 .right {
     float:right;
-    width: 70%
+    width: 70%;
+    box-sizing: border-box;
 }
 .contact_right {
     float: right;
-    width: 30%
+    width: 30%;
+    box-sizing: border-box;
+    
 }
 .contact_middle {
     float: right;
-    width: 65%;
+    width: 70%;
+    box-sizing: border-box;
+}
+.powwr_left {
+    float: left;
+    width: 30%;
+    box-sizing: border-box;
+}
+.powwr_right {
+    float: right;
+    width: 30%;
+    box-sizing: border-box;
+}
+.powwr_middle {
+    width: 40%;
+    box-sizing: border-box;
 }
 /* center words, pics */
 .center {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%
+    width: 50%;
 }
 /* clear floats after columns */
 .row:after{
@@ -130,6 +147,9 @@ html, body, h1, h2, h3, h4, h5, h6 {
 h2 {
     text-align: center;
 }
+body {
+    margin: 0px;
+}
 /* center other text */
 .main {
     text-align: center;
@@ -141,13 +161,33 @@ h2 {
     padding-right: 5px;
     display: inline-block;
 }
-.about_icons {
-    height: 150px;
-    width: 150px;
-    padding: 14px 16px;
+.uconn_selfie{
+    height: auto;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 25%;
 }
-.footer {
-    background-color: #A3FFD4;
-    padding: 10px;
-    text-align: center;
-  }
+.about_icons {
+    padding: 14px 16px;
+    height: auto;
+    width: 25%;
+    box-sizing: border-box;
+}
+.powwr_img {
+    padding: 15px 15px;
+    height: auto;
+    width: 100%;
+    box-sizing: border-box;
+}
+.day_img {
+    height: auto;
+    width: 100%;
+    box-sizing: border-box;
+}
+/* ovals out photo */
+.img2 {
+    height: auto;
+    width: 80%;
+    box-sizing: border-box;
+    border-radius: 50%; 
+}
