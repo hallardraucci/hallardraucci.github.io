@@ -142,6 +142,7 @@
 html, body, h1, h2, h3, h4, h5, h6 {
     font-family: "Lucida Console", Monaco, monospace;
     font-style: normal;
+    box-sizing: border-box;
 }
 /* center text in header */
 h2 {
@@ -191,3 +192,4 @@ body {
     box-sizing: border-box;
     border-radius: 50%; 
 }
+
