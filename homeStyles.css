@@ -105,20 +105,27 @@
     width: 70%;
     box-sizing: border-box;
 }
-.powwr_left {
-    float: left;
-    width: 30%;
-    box-sizing: border-box;
-}
-.powwr_right {
+.forecast_right {
     float: right;
     width: 30%;
     box-sizing: border-box;
 }
-.powwr_middle {
-    width: 40%;
+.forecast_left {
+    float: left;
+    width: 70%;
     box-sizing: border-box;
 }
+.powwr_left {
+    float: left;
+    width: 50%;
+    box-sizing: border-box;
+}
+.powwr_right {
+    float: right;
+    width: 50%;
+    box-sizing: border-box;
+}
+
 /* center words, pics */
 .center {
     display: block;
@@ -175,12 +182,18 @@ body {
     box-sizing: border-box;
 }
 .powwr_img {
-    padding: 15px 15px;
+    padding-bottom: 15px;
     height: auto;
     width: 100%;
     box-sizing: border-box;
 }
 .day_img {
+    height: auto;
+    width: 100%;
+    box-sizing: border-box;
+}
+.forecast_img {
+    padding: 15px 15px;
     height: auto;
     width: 100%;
     box-sizing: border-box;
