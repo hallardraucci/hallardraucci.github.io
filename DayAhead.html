@@ -1,82 +1,121 @@
-<html>  
-    <head>    
-        <title>Hayley Allard-Raucci</title>  
-        <link rel="stylesheet" href="homeStyles.css">
-    </head>  
-    <body>    
-        <div class="header">
-            <h1> ISO New England: IT Day-Ahead Intern </h1>
-        </div>   
-        <div class="topnav">
-            <!-- includes tabs that user can flip through-->
-            <a href="index.html"> 
-                <img src="/ICons/houseb.png" class="icons">Home</a>
-            <a href="about.html">
-                <img src="/ICons/infob.png" class="icons">About</a>
-            <a href="contact.html">
-                <img src="/ICons/mailb.png" class="icons">Contact</a>
-            <a href="/Resume/resume.pdf" target="_blank">
-                <img src="/ICons/pdfb.png" class="icons">Resume</a>
-            <!-- allows users to hover over button and have drop down content to choose-->
-            <div class="dropdown">
-                <button class="dropbtn active">
-                    <img src="/ICons/magw.png" class="icons"> Experience in Depth</button>
-                <div class="dropdown-content">
-                    <a href="OPTI.html">Operations Performance, Training & Integration</a>
-                    <a class="active" href="DayAhead.html">IT Day-Ahead</a>
-                    <a href="Forecasting.html">Energy Load Forecasting Project</a>
-                    <a href="DataEngineer.html">Data Engineer</a>
-                </div>
-            </div>
-        </div> 
-        <h2> 
-            June 2018 - August 2018
-            <img src="/Pictures/Final Presentations.jpg" style="width:50%" class="center">
-        </h2>
-        <div class="column left">
-            <h2> Meet the Day-Ahead Interns!</h2>
-            <img src="/Pictures/DayAheadInterns.jpeg" class="day_img">
-            <p class="main"> From left to right: Hayley Allard-Raucci, David Koleczek, Meghan Podlaski </p>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hayley Allard-Raucci</title>
+    <link rel="stylesheet" href="homeStyles.css" />
+  </head>
+  <body>
+    <div class="header">
+      <h1>ISO New England: IT Day-Ahead Intern</h1>
+    </div>
+    <div class="topnav">
+      <!-- includes tabs that user can flip through-->
+      <a href="index.html">
+        <img src="/ICons/houseb.png" class="icons" />Home</a
+      >
+      <a href="about.html">
+        <img src="/ICons/infob.png" class="icons" />About</a
+      >
+      <a href="contact.html">
+        <img src="/ICons/mailb.png" class="icons" />Contact</a
+      >
+      <a href="/Resume/resume.pdf" target="_blank">
+        <img src="/ICons/pdfb.png" class="icons" />Resume</a
+      >
+      <!-- allows users to hover over button and have drop down content to choose-->
+      <div class="dropdown">
+        <button class="dropbtn active">
+          <img src="/ICons/magw.png" class="icons" /> Experience in Depth
+        </button>
+        <div class="dropdown-content">
+          <a href="OPTI.html">Operations Performance, Training & Integration</a>
+          <a class="active" href="DayAhead.html">IT Day-Ahead</a>
+          <a href="Forecasting.html">Energy Load Forecasting Project</a>
+          <a href="DataEngineer.html">Data Engineer</a>
         </div>
-        <div class="column right">
-            <p class="main"> My first internship was with ISO New England in their IT Day-Ahead Support Team. ISO New
-                England is a not-for-profit organizaton that operates the power grids, ensuring reliable flow of energy.
-                Day-Ahead market is for energy distributers to supply a set price the day before for their generators
-                to run as needed. As an intern I worked closely on their Solar PV project. There has been an increase in behind 
-                the meter solar pv. This increase has made it difficult for ISO-NE to accurately forecast load
-                because solar pv is about 10% of the total load. We are currently seeing about 2400 MW of solar power
-                being used and by 2027 we estimate that it will jump to 5000 MW. The goal of this project was to incorporate 
-                data supplied from outside vendors to improve forecast accuracy. 
-            </p>
-            <p class="main"> The Solar PV team consisted of me and 6 other full time employees. We had daily scrum meetings 
-                where we would go over our current work and any blockers, if any. I created an entity relationship diagram 
-                of the Postgres database for this project that we used during our meetings. This diagram was the basis for the 
-                technical design where the data ISO receives for this project needed to be stored.
-                I mainly programmed in Python and Java but, I also got some exposure in SQL and HTML/CSS. At first, I coded in Python
-                a program that outputs the sunset and sunrise for the eight load zones (aggregations of specific points on the transmission 
-                system) for a given start and end date. To ensure my program was accurate, I used a credited website to compare the outputs 
-                of my program. I wrote documentation on the program, running 96 test cases with screen shots. Before I created this program, 
-                we did not have data with such granularity. The difference between Maine and Connecticut is 15 minutes which is important for
-                data validation. The generated CSV outputs were uploaded to the Postgres Database. These outputs were used to ensure that the raw 
-                data follows the necessary requirements. For example, this will prevent hours with no sunlight from being misrepresented
-                by having a megawatt value when it should not. I later then coded this program again in Java for future use. 
-            </p>
-            <p class="main"> Another program I designed in Python was to manipulate CSV files into proper format. We were given CSV files
-                from the vendors that would not match the Database layout. This code would take a CSV as an input and format it properly
-                to match the Database and allow users to upload this file without any issues. This program was also coded again in Java 
-                for the company to use every time a CSV file was received by vendors. A small task I was given to get familiar with HTML/CSS 
-                and JavaScript was to create a website in which a user selects date in which the corresponding vendor file would 
-                download to the users computer. Towards the end of my internship I was able to dabble with the Postgres 
-                Database. I created a view that would separate the raw data from the clean data with a reason column explaining why
-                the data was marked with an error. These errors included null values, value before or after daylight, and threshold exceedance. 
-            </p>
-            <p class="main"> The programs I designed during this internship were critical for the success of the project. I am happy
-                that I was able to contribute on something that would normally have been completed by a full time engineer. Throughout this
-                internship I was able to experience the engineering work enviornment where we must go through business requirement before
-                actually jumping into all the coding that needed to be done. This internship allowed me the ability to test my coding skills by 
-                exploring different coding languages. IT Day-Ahead Support was a great learning experience and oppurtunity to explore
-                this field and myself. 
-            </p>
-        </div>
-    </body>
+      </div>
+    </div>
+    <h2>
+      June 2018 - August 2018
+      <img
+        src="/Pictures/Final Presentations.jpg"
+        style="width:50%"
+        class="center"
+      />
+    </h2>
+    <div class="column left">
+      <h2>Meet the Day-Ahead Interns!</h2>
+      <img src="/Pictures/DayAheadInterns.jpeg" class="day_img" />
+      <p class="main">
+        From left to right: Hayley Allard-Raucci, David Koleczek, Meghan
+        Podlaski
+      </p>
+    </div>
+    <div class="column right">
+      <p class="main">
+        My first internship was with ISO New England in their IT Day-Ahead
+        Support Team. ISO New England is a not-for-profit organizaton that
+        operates the power grids, ensuring reliable flow of energy. Day-Ahead
+        market is for energy distributers to supply a set price the day before
+        for their generators to run as needed. As an intern I worked closely on
+        their Solar PV project. There has been an increase in behind the meter
+        solar pv. This increase has made it difficult for ISO-NE to accurately
+        forecast load because solar pv is about 10% of the total load. We are
+        currently seeing about 2400 MW of solar power being used and by 2027 we
+        estimate that it will jump to 5000 MW. The goal of this project was to
+        incorporate data supplied from outside vendors to improve forecast
+        accuracy.
+      </p>
+      <p class="main">
+        The Solar PV team consisted of me and 6 other full time employees. We
+        had daily scrum meetings where we would go over our current work and any
+        blockers, if any. I created an entity relationship diagram of the
+        Postgres database for this project that we used during our meetings.
+        This diagram was the basis for the technical design where the data ISO
+        receives for this project needed to be stored. I mainly programmed in
+        Python and Java but, I also got some exposure in SQL and HTML/CSS. At
+        first, I coded in Python a program that outputs the sunset and sunrise
+        for the eight load zones (aggregations of specific points on the
+        transmission system) for a given start and end date. To ensure my
+        program was accurate, I used a credited website to compare the outputs
+        of my program. I wrote documentation on the program, running 96 test
+        cases with screen shots. Before I created this program, we did not have
+        data with such granularity. The difference between Maine and Connecticut
+        is 15 minutes which is important for data validation. The generated CSV
+        outputs were uploaded to the Postgres Database. These outputs were used
+        to ensure that the raw data follows the necessary requirements. For
+        example, this will prevent hours with no sunlight from being
+        misrepresented by having a megawatt value when it should not. I later
+        then coded this program again in Java for future use.
+      </p>
+      <p class="main">
+        Another program I designed in Python was to manipulate CSV files into
+        proper format. We were given CSV files from the vendors that would not
+        match the Database layout. This code would take a CSV as an input and
+        format it properly to match the Database and allow users to upload this
+        file without any issues. This program was also coded again in Java for
+        the company to use every time a CSV file was received by vendors. A
+        small task I was given to get familiar with HTML/CSS and JavaScript was
+        to create a website in which a user selects date in which the
+        corresponding vendor file would download to the users computer. Towards
+        the end of my internship I was able to dabble with the Postgres
+        Database. I created a view that would separate the raw data from the
+        clean data with a reason column explaining why the data was marked with
+        an error. These errors included null values, value before or after
+        daylight, and threshold exceedance.
+      </p>
+      <p class="main">
+        The programs I designed during this internship were critical for the
+        success of the project. I am happy that I was able to contribute on
+        something that would normally have been completed by a full time
+        engineer. Throughout this internship I was able to experience the
+        engineering work enviornment where we must go through business
+        requirement before actually jumping into all the coding that needed to
+        be done. This internship allowed me the ability to test my coding skills
+        by exploring different coding languages. IT Day-Ahead Support was a
+        great learning experience and oppurtunity to explore this field and
+        myself.
+      </p>
+    </div>
+  </body>
 </html>

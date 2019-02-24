@@ -1,208 +1,240 @@
 .header {
-    background-color: #A3FFD4;
-    padding: 5px;
+  background-color: #a3ffd4;
+  padding: 5px;
 }
 /* top navigation bar */
 .topnav {
-    overflow: hidden;
-    background-color: #A3FFD4;
-
+  overflow: hidden;
+  background-color: #a3ffd4;
 }
 /* navigation links */
 .topnav a {
-    float: left;
-    display: block;
-    color: black;
-    text-align: center;
-    padding: 14px 16px;
-    transition: all .3s ease;
-    text-decoration: none;
-    border-right: 1px solid black;
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  border-right: 1px solid black;
 }
 .dropdown {
-    float:left;
-    overflow: hidden;
+  float: left;
+  overflow: hidden;
 }
 /* format of dropdown button */
 .dropdown .dropbtn {
-    border: none;
-    outline: none;
-    color: black;
-    padding: 14px 16px;
-    transition: all .3s ease;
-    background-color: inherit;
-    font-family: inherit;
-    font-size: inherit;
-    margin: 0;
-    border-right: 1px solid black;
+  border: none;
+  outline: none;
+  color: black;
+  padding: 14px 16px;
+  transition: all 0.3s ease;
+  background-color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  margin: 0;
+  border-right: 1px solid black;
 }
 /* mouse hover when its not the active tab */
-.topnav a:hover:not(.active),  .dropbtn {
-    background-color:white;
-    color: black;
-    cursor: pointer;
+.topnav a:hover:not(.active) {
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}
+
+.dropbtn:hover:not(.active) {
+  background-color: white;
+  color: black;
+  cursor: pointer;
 }
 /* display format */
 .dropdown-content {
-    display: block;
-    visibility: hidden;
-    opacity: 0;
-    transition: opacity .3s ease-in-out;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
+  display: block;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
 }
- /* format of content in dropdown */
+/* format of content in dropdown */
 .dropdown-content a {
-    float: none;
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-    border-right: none;
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  border-right: none;
 }
 /* color on hover of dropdown */
 .dropdown-content a:hover {
-    background-color: #ddd;
+  background-color: #ddd;
 }
 .dropdown:hover .dropdown-content {
-    opacity: 1;
-    visibility: visible;
+  opacity: 1;
+  visibility: visible;
+  display: block;
 }
 /* sets format of active tab */
 .topnav .active {
-    background-color: black;
-    color: white;
+  background-color: black;
+  color: white;
 }
-/* unequal columns */ 
+/* unequal columns */
 .column {
-    float: left;
-    padding: 15px;
+  float: left;
+  padding: 15px;
 }
 /* column small left side content */
 .left {
-    float: left;
-    width: 30%;
-    box-sizing: border-box;
+  float: left;
+  width: 30%;
+  box-sizing: border-box;
 }
 /* column main content on page */
 .right {
-    float:right;
-    width: 70%;
-    box-sizing: border-box;
+  float: right;
+  width: 70%;
+  box-sizing: border-box;
 }
 .contact_right {
-    float: right;
-    width: 30%;
-    box-sizing: border-box;
-    
+  float: right;
+  width: 30%;
+  box-sizing: border-box;
 }
 .contact_middle {
-    float: right;
-    width: 70%;
-    box-sizing: border-box;
+  float: right;
+  width: 70%;
+  box-sizing: border-box;
 }
 .forecast_right {
-    float: right;
-    width: 30%;
-    box-sizing: border-box;
+  float: right;
+  width: 30%;
+  box-sizing: border-box;
 }
 .forecast_left {
-    float: left;
-    width: 70%;
-    box-sizing: border-box;
+  float: left;
+  width: 70%;
+  box-sizing: border-box;
 }
 .powwr_left {
-    float: left;
-    width: 50%;
-    box-sizing: border-box;
+  float: left;
+  width: 50%;
+  box-sizing: border-box;
 }
 .powwr_right {
-    float: right;
-    width: 50%;
-    box-sizing: border-box;
+  float: right;
+  width: 50%;
+  box-sizing: border-box;
 }
-
+.about_right {
+  float: right;
+  width: 65%;
+  box-sizing: border-box;
+}
+.about_left {
+  float: left;
+  width: 35%;
+  box-sizing: border-box;
+}
 /* center words, pics */
 .center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
 /* clear floats after columns */
-.row:after{
-    content: "";
-    display: table;
-    clear: both;
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 /* Responsive layout - makes the columns stack on top of each other instead of next to each other */
-@media screen and (max-width:600px) {
-    .column.left, .column.right {
-        width: 100%;
-    }
+@media screen and (max-width: 600px) {
+  .column.left,
+  .column.right {
+    width: 100%;
+  }
 }
-/* set everything on page to same font */                   
-html, body, h1, h2, h3, h4, h5, h6 {
-    font-family: "Lucida Console", Monaco, monospace;
-    font-style: normal;
-    box-sizing: border-box;
+/* set everything on page to same font */
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Lucida Console", Monaco, monospace;
+  font-style: normal;
+  box-sizing: border-box;
 }
 /* center text in header */
 h2 {
-    text-align: center;
+  text-align: center;
 }
 body {
-    margin: 0px;
+  margin: 0px;
 }
 /* center other text */
 .main {
-    text-align: center;
+  text-align: center;
 }
 .icons {
-    height: 20px;
-    width: 20px;
-    border: none;
-    padding-right: 5px;
-    display: inline-block;
+  height: 20px;
+  width: 20px;
+  border: none;
+  padding-right: 5px;
+  display: inline-block;
 }
-.uconn_selfie{
-    height: auto;
-    width: 100%;
-    box-sizing: border-box;
-    border-radius: 25%;
+.uconn_selfie {
+  height: auto;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 25%;
 }
 .about_icons {
-    padding: 14px 16px;
-    height: auto;
-    width: 25%;
-    box-sizing: border-box;
+  padding: 14px 16px;
+  height: auto;
+  width: 25%;
+  box-sizing: border-box;
 }
 .powwr_img {
-    padding-bottom: 15px;
-    height: auto;
-    width: 100%;
-    box-sizing: border-box;
+  padding-bottom: 15px;
+  height: auto;
+  width: 100%;
+  box-sizing: border-box;
 }
 .day_img {
-    height: auto;
-    width: 100%;
-    box-sizing: border-box;
+  height: auto;
+  width: 100%;
+  box-sizing: border-box;
 }
 .forecast_img {
-    padding: 15px 15px;
-    height: auto;
-    width: 100%;
-    box-sizing: border-box;
+  padding: 15px 15px;
+  height: auto;
+  width: 100%;
+  box-sizing: border-box;
+}
+.senior_group {
+  height: auto;
+  width: 100%;
+  box-sizing: border-box;
+}
+.cc_photo {
+  height: auto;
+  width: 100%;
+  box-sizing: border-box;
+  padding-top: 15px;
 }
 /* ovals out photo */
 .img2 {
-    height: auto;
-    width: 80%;
-    box-sizing: border-box;
-    border-radius: 50%; 
+  height: auto;
+  width: 80%;
+  box-sizing: border-box;
+  border-radius: 50%;
 }
-

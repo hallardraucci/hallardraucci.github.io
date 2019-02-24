@@ -1,94 +1,124 @@
-<html>  
-    <head>    
-        <title>Hayley Allard-Raucci</title>  
-        <link rel="stylesheet" href="homeStyles.css">
-    </head>  
-    <body>    
-        <div class="header">
-            <h1> POWWR: Energy Load Forecasting </h1>
-        </div>   
-        <div class="topnav">
-            <!-- includes tabs that user can flip through-->
-            <a href="index.html"> 
-                <img src="/ICons/houseb.png" class="icons">Home</a>
-            <a href="about.html">
-                <img src="/ICons/infob.png" class="icons">About</a>
-            <a href="contact.html">
-                <img src="/ICons/mailb.png" class="icons">Contact</a>
-            <a href="/Resume/resume.pdf" target="_blank">
-                <img src="/ICons/pdfb.png" class="icons">Resume</a>
-            <!-- allows users to hover over button and have drop down content to choose-->
-            <div class="dropdown">
-                <button class="dropbtn active"> 
-                    <img src="/ICons/magw.png" class="icons">Experience in Depth</button>
-                <div class="dropdown-content">
-                    <a href="OPTI.html">Operations Performance, Training & Integration</a>
-                    <a href="DayAhead.html">IT Day-Ahead</a>
-                    <a class="active" href="Forecasting.html">Energy Load Forecasting Project</a>
-                    <a href="DataEngineer.html">Data Engineer</a>
-                </div>
-            </div>
-        </div> 
-        <h2>
-            September 2018 - Present
-        </h2>
-        <div class="column forecast_right">
-            <h2>
-                Say hello to the Husky POWWR team!
-            </h2>
-            <img src="Pictures/senior_group.jpg" class="forecast_img">
-            <p class="main">
-                Pictured left to right: Vickram Tulsie, Hayley Allard-Raucci, Jeffrey Eng, Alex Masi
-            </p>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hayley Allard-Raucci</title>
+    <link rel="stylesheet" href="homeStyles.css" />
+  </head>
+  <body>
+    <div class="header">
+      <h1>POWWR: Energy Load Forecasting</h1>
+    </div>
+    <div class="topnav">
+      <!-- includes tabs that user can flip through-->
+      <a href="index.html">
+        <img src="/ICons/houseb.png" class="icons" />Home</a
+      >
+      <a href="about.html">
+        <img src="/ICons/infob.png" class="icons" />About</a
+      >
+      <a href="contact.html">
+        <img src="/ICons/mailb.png" class="icons" />Contact</a
+      >
+      <a href="/Resume/resume.pdf" target="_blank">
+        <img src="/ICons/pdfb.png" class="icons" />Resume</a
+      >
+      <!-- allows users to hover over button and have drop down content to choose-->
+      <div class="dropdown">
+        <button class="dropbtn active">
+          <img src="/ICons/magw.png" class="icons" />Experience in Depth
+        </button>
+        <div class="dropdown-content">
+          <a href="OPTI.html">Operations Performance, Training & Integration</a>
+          <a href="DayAhead.html">IT Day-Ahead</a>
+          <a class="active" href="Forecasting.html"
+            >Energy Load Forecasting Project</a
+          >
+          <a href="DataEngineer.html">Data Engineer</a>
         </div>
-        <div class="column forecast_left">
-            <p class="main">
-                POWWR provides a forecast up to 30 days out using weather-responsive load forecast
-                algorithms to give clients visibilty into future energy load usage based on forecasted
-                weather conditions. POWWR also provides a long-range forecast based on all the client's 
-                customers and usage history. They take in the information through the client's billing system 
-                allowing them to create an accurate long term forecast even with the ever-changing account mix 
-                of a client. 
-            </p>
-            <p class="main">
-                The basis of the first semester for Senior Design 1 was to create a model that could
-                predict future energy consumption in megawatt hours (MwH). To do this we utilized a machine learning 
-                technique called regression. This allows the model to predict future values based on similar record usage
-                from the past. We strictly used recorded hourly usage and weather data from the past to form this model. 
-                Partitions along attributes of the large dataset are crucial to increase the accuracy in the model. Initially, we 
-                approached this problem by partitioning the data by weather station and month, then later adding day of the week. The 
-                days of the week were grouped by weekday versus Saturday versus Sunday. Weather station and month alone gave us 168 subsets
-                of data to run our model on. The 168 subsets were obtained by using 14 weather stations within the regional energy transmission 
-                organization and the 12 months of the year. Once we split the data further into days of the week, we got 504 subsets of data. By 
-                grouping the data by month and day, it allowed us to compare similar trends within the data. For example, this prevents us from 
-                comparing a data point in the month of January to a data point in July where the MwH consumption will differ due to weather anaomalies. 
-            </p>
-            <p class="main">
-                One problem we needed to prevent was overfitting the data. Overfitting occurs when the model is too constrained and gives an accurate 
-                prediction for the trained data set but not for any other supplied data set. This in turn makes in a poor predictor of future data points.
-                This was avoided by using 3-fold cross validation, which is a method that randomly assigns each of the 504 subsets into one of three categories.
-                Two of the three categories are then used to train the model. In the final category of data is then used to train the model. This process is 
-                repeated with each possible permutation of two training categories and one validation category. The final result is the average score of all the 
-                permutations scores. 
-            </p>
-            <p class="main">
-                In our model, we used Random Forest Regressor, Extra Trees Regressor, and AdaBoost Regressor against all 504 subsets. The accuracy of our model 
-                was measured using mean absolue percentage error (MAPE). A lower MAPE score means a higher accuracy of the model. Our team was able to successfully 
-                achieve a model that produces a MAPE score of 3.63%, an improvement from our goal of 10% error. 
-            </p>
-            <p class="main">
-                Throughout this project we learned how to use many tools and technologies to help us complete the model such as: agile methodology, Bitbucket, 
-                Google Cloud Platform, Microsoft Teams, and Jupyter Notebook. We used agile methodology to create tickets through Jira for the tasks we needed to 
-                complete for the model and assigned them to individuals in the team. This helped us remain organized on the work being completed. We met with POWWR 
-                weekly through a Zoom video conference to discuss the work we had completed in the previous week
-                and go over the next steps in our project. We utilized these meetings to ask questions, demo work, and keep POWWR 
-                informed with our school requirements for the project. 
-            </p>
-            <p class="main">
-                This semester we will move on in creating an additional model using data in larger areas. 
-                This will force us to group weather station data by zone to find their average temperature 
-                and hourly usage data.  
-            </p>
-        </div>
-    </body>
+      </div>
+    </div>
+    <h2>
+      September 2018 - Present
+    </h2>
+    <div class="column forecast_right">
+      <h2>
+        Say hello to the Husky POWWR team!
+      </h2>
+      <img src="Pictures/senior_group.jpg" class="forecast_img" />
+      <p class="main">
+        Pictured left to right: Vickram Tulsie, Hayley Allard-Raucci, Jeffrey
+        Eng, Alex Masi
+      </p>
+    </div>
+    <div class="column forecast_left">
+      <p class="main">
+        POWWR provides a forecast up to 30 days out using weather-responsive
+        load forecast algorithms to give clients visibilty into future energy
+        load usage based on forecasted weather conditions. POWWR also provides a
+        long-range forecast based on all the client's customers and usage
+        history. They take in the information through the client's billing
+        system allowing them to create an accurate long term forecast even with
+        the ever-changing account mix of a client.
+      </p>
+      <p class="main">
+        The basis of the first semester for Senior Design 1 was to create a
+        model that could predict future energy consumption in megawatt hours
+        (MwH). To do this we utilized a machine learning technique called
+        regression. This allows the model to predict future values based on
+        similar record usage from the past. We strictly used recorded hourly
+        usage and weather data from the past to form this model. Partitions
+        along attributes of the large dataset are crucial to increase the
+        accuracy in the model. Initially, we approached this problem by
+        partitioning the data by weather station and month, then later adding
+        day of the week. The days of the week were grouped by weekday versus
+        Saturday versus Sunday. Weather station and month alone gave us 168
+        subsets of data to run our model on. The 168 subsets were obtained by
+        using 14 weather stations within the regional energy transmission
+        organization and the 12 months of the year. Once we split the data
+        further into days of the week, we got 504 subsets of data. By grouping
+        the data by month and day, it allowed us to compare similar trends
+        within the data. For example, this prevents us from comparing a data
+        point in the month of January to a data point in July where the MwH
+        consumption will differ due to weather anaomalies.
+      </p>
+      <p class="main">
+        One problem we needed to prevent was overfitting the data. Overfitting
+        occurs when the model is too constrained and gives an accurate
+        prediction for the trained data set but not for any other supplied data
+        set. This in turn makes in a poor predictor of future data points. This
+        was avoided by using 3-fold cross validation, which is a method that
+        randomly assigns each of the 504 subsets into one of three categories.
+        Two of the three categories are then used to train the model. In the
+        final category of data is then used to train the model. This process is
+        repeated with each possible permutation of two training categories and
+        one validation category. The final result is the average score of all
+        the permutations scores.
+      </p>
+      <p class="main">
+        In our model, we used Random Forest Regressor, Extra Trees Regressor,
+        and AdaBoost Regressor against all 504 subsets. The accuracy of our
+        model was measured using mean absolue percentage error (MAPE). A lower
+        MAPE score means a higher accuracy of the model. Our team was able to
+        successfully achieve a model that produces a MAPE score of 3.63%, an
+        improvement from our goal of 10% error.
+      </p>
+      <p class="main">
+        Throughout this project we learned how to use many tools and
+        technologies to help us complete the model such as: agile methodology,
+        Bitbucket, Google Cloud Platform, Microsoft Teams, and Jupyter Notebook.
+        We used agile methodology to create tickets through Jira for the tasks
+        we needed to complete for the model and assigned them to individuals in
+        the team. This helped us remain organized on the work being completed.
+        We met with POWWR weekly through a Zoom video conference to discuss the
+        work we had completed in the previous week and go over the next steps in
+        our project. We utilized these meetings to ask questions, demo work, and
+        keep POWWR informed with our school requirements for the project.
+      </p>
+      <p class="main">
+        This semester we will move on in creating an additional model using data
+        in larger areas. This will force us to group weather station data by
+        zone to find their average temperature and hourly usage data.
+      </p>
+    </div>
+  </body>
 </html>
