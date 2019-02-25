@@ -346,7 +346,7 @@ body {
 /* ovals out photo */
 .img2 {
   height: auto;
-  width: 80%;
+  max-width: 80%;
   box-sizing: border-box;
   border-radius: 50%;
 }
