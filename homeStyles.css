@@ -83,62 +83,186 @@
   background-color: black;
   color: white;
 }
-/* unequal columns */
-.column {
+* {
+  box-sizing: border-box;
+}
+/* clear floats after columns */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+[class*="col-"] {
   float: left;
   padding: 15px;
 }
-/* column small left side content */
-.left {
-  float: left;
-  width: 30%;
-  box-sizing: border-box;
+/* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
 }
-/* column main content on page */
-.right {
-  float: right;
-  width: 70%;
-  box-sizing: border-box;
+@media only screen and (max-width: 600px) {
+  .main {
+    font-size: 10px;
+  }
+  .col-1 {
+    width: 8.33%;
+  }
+  .col-2 {
+    width: 16.66%;
+  }
+  .col-3 {
+    width: 25%;
+  }
+  .col-4 {
+    width: 33.33%;
+  }
+  .col-5 {
+    width: 41.66%;
+  }
+  .col-6 {
+    width: 50%;
+  }
+  .col-7 {
+    width: 58.33%;
+  }
+  .col-8 {
+    width: 66.66%;
+  }
+  .col-9 {
+    width: 75%;
+  }
+  .col-10 {
+    width: 83.33%;
+  }
+  .col-11 {
+    width: 91.66%;
+  }
+  .col-12 {
+    width: 100%;
+  }
 }
-.contact_right {
-  float: right;
-  width: 30%;
-  box-sizing: border-box;
+@media only screen and (min-width: 600px) {
+  .main {
+    font-size: 12px;
+  }
+  .col-1 {
+    width: 8.33%;
+  }
+  .col-2 {
+    width: 16.66%;
+  }
+  .col-3 {
+    width: 25%;
+  }
+  .col-4 {
+    width: 33.33%;
+  }
+  .col-5 {
+    width: 41.66%;
+  }
+  .col-6 {
+    width: 50%;
+  }
+  .col-7 {
+    width: 58.33%;
+  }
+  .col-8 {
+    width: 66.66%;
+  }
+  .col-9 {
+    width: 75%;
+  }
+  .col-10 {
+    width: 83.33%;
+  }
+  .col-11 {
+    width: 91.66%;
+  }
+  .col-12 {
+    width: 100%;
+  }
 }
-.contact_middle {
-  float: right;
-  width: 70%;
-  box-sizing: border-box;
+@media only screen and (min-width: 768px) {
+  .main {
+    font-size: 15px;
+  }
+  .col-1 {
+    width: 8.33%;
+  }
+  .col-2 {
+    width: 16.66%;
+  }
+  .col-3 {
+    width: 25%;
+  }
+  .col-4 {
+    width: 33.33%;
+  }
+  .col-5 {
+    width: 41.66%;
+  }
+  .col-6 {
+    width: 50%;
+  }
+  .col-7 {
+    width: 58.33%;
+  }
+  .col-8 {
+    width: 66.66%;
+  }
+  .col-9 {
+    width: 75%;
+  }
+  .col-10 {
+    width: 83.33%;
+  }
+  .col-11 {
+    width: 91.66%;
+  }
+  .col-12 {
+    width: 100%;
+  }
 }
-.forecast_right {
-  float: right;
-  width: 30%;
-  box-sizing: border-box;
-}
-.forecast_left {
-  float: left;
-  width: 70%;
-  box-sizing: border-box;
-}
-.powwr_left {
-  float: left;
-  width: 50%;
-  box-sizing: border-box;
-}
-.powwr_right {
-  float: right;
-  width: 50%;
-  box-sizing: border-box;
-}
-.about_right {
-  float: right;
-  width: 65%;
-  box-sizing: border-box;
-}
-.about_left {
-  float: left;
-  width: 35%;
-  box-sizing: border-box;
+@media only screen and (min-width: 992px) {
+  .main {
+    font-size: 17px;
+  }
+  .col-1 {
+    width: 8.33%;
+  }
+  .col-2 {
+    width: 16.66%;
+  }
+  .col-3 {
+    width: 25%;
+  }
+  .col-4 {
+    width: 33.33%;
+  }
+  .col-5 {
+    width: 41.66%;
+  }
+  .col-6 {
+    width: 50%;
+  }
+  .col-7 {
+    width: 58.33%;
+  }
+  .col-8 {
+    width: 66.66%;
+  }
+  .col-9 {
+    width: 75%;
+  }
+  .col-10 {
+    width: 83.33%;
+  }
+  .col-11 {
+    width: 91.66%;
+  }
+  .col-12 {
+    width: 100%;
+  }
 }
 /* center words, pics */
 .center {
@@ -147,19 +271,7 @@
   margin-right: auto;
   width: 50%;
 }
-/* clear floats after columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-/* Responsive layout - makes the columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .column.left,
-  .column.right {
-    width: 100%;
-  }
-}
+
 /* set everything on page to same font */
 html,
 body,
@@ -185,51 +297,51 @@ body {
   text-align: center;
 }
 .icons {
-  height: 20px;
-  width: 20px;
+  height: auto;
+  width: 25px;
   border: none;
   padding-right: 5px;
   display: inline-block;
 }
 .uconn_selfie {
   height: auto;
-  width: 100%;
+  max-width: 100%;
   box-sizing: border-box;
   border-radius: 25%;
 }
 .about_icons {
   padding: 14px 16px;
   height: auto;
-  width: 25%;
+  max-width: 25%;
   box-sizing: border-box;
 }
 .powwr_img {
   padding-bottom: 15px;
   height: auto;
-  width: 100%;
+  max-width: 100%;
   box-sizing: border-box;
 }
 .day_img {
   height: auto;
-  width: 100%;
+  max-width: 100%;
   box-sizing: border-box;
 }
 .forecast_img {
   padding: 15px 15px;
   height: auto;
-  width: 100%;
+  max-width: 100%;
   box-sizing: border-box;
 }
 .senior_group {
   height: auto;
-  width: 100%;
+  max-width: 100%;
   box-sizing: border-box;
 }
 .cc_photo {
   height: auto;
-  width: 100%;
+  max-width: 100%;
   box-sizing: border-box;
-  padding-top: 15px;
+  padding-top: 20px;
 }
 /* ovals out photo */
 .img2 {
