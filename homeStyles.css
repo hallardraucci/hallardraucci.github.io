@@ -10,6 +10,7 @@ body {
 /* top navigation bar */
 ul.topnav {
   list-style-type: none;
+  list-style: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
@@ -26,30 +27,24 @@ ul.topnav li a {
   padding: 14px 16px;
   transition: all 0.3s ease;
   text-decoration: none;
-  border-right: 1px solid black;
-}
-.dropdown {
-  float: left;
-  overflow: hidden;
-}
-/* format of dropdown button */
-.dropdown .dropbtn {
-  border: none;
-  outline: none;
-  color: black;
-  padding: 14px 16px;
-  transition: all 0.3s ease;
-  background-color: inherit;
-  font-family: inherit;
-  font-size: inherit;
-  margin: 0;
-  border-right: 1px solid black;
 }
 /* mouse hover when its not the active tab */
 ul.topnav li a:hover:not(.active) {
   background-color: white;
   color: black;
   cursor: pointer;
+}
+/* sets format of active tab */
+ul.topnav li a.active {
+  background-color: black;
+  color: white;
+}
+ul.topnav li.right {
+  float: right;
+}
+.dropdown a{
+  overflow: hidden;
+  text-align: center;
 }
 
 .dropbtn:hover:not(.active) {
@@ -90,14 +85,7 @@ ul.topnav li a:hover:not(.active) {
   visibility: visible;
   display: block;
 }
-/* sets format of active tab */
-ul.topnav li a.active {
-  background-color: black;
-  color: white;
-}
-ul.topnav li.right {
-  float: right;
-}
+
 * {
   box-sizing: border-box;
 }
