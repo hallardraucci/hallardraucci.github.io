@@ -25,16 +25,15 @@ ul.topnav li a {
   color: black;
   text-align: center;
   padding: 14px 16px;
-  transition: all 0.3s ease;
   text-decoration: none;
-  /* -webkit-transition: width 2s, height 4s; */
+  -webkit-transition: width 2s, height 4s; 
 }
 /* mouse hover when its not the active tab */
 ul.topnav li a:hover:not(.active) {
   background-color: white;
   color: black;
   cursor: pointer;
-  
+  transition: all 0.3s ease;
 }
 /* sets format of active tab */
 ul.topnav li a.active {
