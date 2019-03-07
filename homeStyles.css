@@ -27,12 +27,14 @@ ul.topnav li a {
   padding: 14px 16px;
   transition: all 0.3s ease;
   text-decoration: none;
+  /* -webkit-transition: width 2s, height 4s; */
 }
 /* mouse hover when its not the active tab */
 ul.topnav li a:hover:not(.active) {
   background-color: white;
   color: black;
   cursor: pointer;
+  
 }
 /* sets format of active tab */
 ul.topnav li a.active {
@@ -239,6 +241,14 @@ h6 {
   font-style: normal;
   box-sizing: border-box;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 300px)/(1600 - 300)));
+}
 /* center text in header */
 h2 {
   text-align: center;
@@ -259,6 +269,13 @@ h2 {
   max-width: 100%;
   box-sizing: border-box;
   border-radius: 25%;
+}
+.iso_interns {
+  padding-top: 10px;
+  padding: 16px 16px;
+  height: auto;
+  width: 80%;
+  box-sizing: border-box;
 }
 .about_icons {
   padding: 14px 16px;
