@@ -26,7 +26,6 @@ ul.topnav li a {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  -webkit-transition: width 2s, height 4s; 
 }
 /* mouse hover when its not the active tab */
 ul.topnav li a:hover:not(.active) {
@@ -58,7 +57,7 @@ ul.topnav li.right {
   display: block;
   visibility: hidden;
   opacity: 0;
-  transition: all 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
   position: absolute;
   background-color: #f9f9f9;
   min-width: 160px;
