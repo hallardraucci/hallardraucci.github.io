@@ -74,24 +74,22 @@
       </p>
       <p class="main">
         One problem we needed to prevent was overfitting the data. Overfitting
-        occurs when the model is too constrained and gives an accurate
-        prediction for the trained data set but not for any other supplied data
-        set. This in turn makes in a poor predictor of future data points. This
-        was avoided by using 3-fold cross validation, which is a method that
+        occurs when the model gives an accurate
+        prediction for the training data set but gives worse predictions for other
+        data sets. To avoid overfitting we used 3-fold cross validation, which is a method that
         randomly assigns each of the 504 subsets into one of three categories.
-        Two of the three categories are then used to train the model. In the
+        Two of the three categories are then used to train the model. Then the
         final category of data is then used to train the model. This process is
         repeated with each possible permutation of two training categories and
         one validation category. The final result is the average score of all
         the permutations scores.
       </p>
       <p class="main">
-        In our model, we used Random Forest Regressor, Extra Trees Regressor,
-        and AdaBoost Regressor against all 504 subsets. The accuracy of our
-        model was measured using mean absolue percentage error (MAPE). A lower
-        MAPE score means a higher accuracy of the model. Our team was able to
+        For our model, we used a combination of random forest, extra trees, and AdaBoost algorithms.
+        The accuracy of our model was measured using mean absolute percentage error (MAPE). 
+        A lower MAPE score means a higher accuracy of the model. Our team was able to
         successfully achieve a model that produces a MAPE score of 3.63%, an
-        improvement from our goal of 10% error.
+        improvement from our goal of 10% error. 
       </p>
       <p class="main">
         Throughout this project we learned how to use many tools and
@@ -107,7 +105,7 @@
       </p>
       <p class="main">
         This semester we will move on in creating an additional model using data
-        in larger areas. This will force us to group weather station data by
+        for larger load zones. This will force us to group weather station data by
         zone to find their average temperature and hourly usage data.
       </p>
     </div>
