@@ -7,6 +7,12 @@ body {
   font-size: calc(16px + (26 - 14) * ((100vw - 300px) / (3840 - 300)));
   line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 300px)/(1600 - 300)));
 }
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Corben', Georgia, Times, serif;
+}
+p {
+    font-family: 'Nobile', Helvetica, Arial, sans-serif;
+}
 /* top navigation bar */
 ul.topnav {
   list-style-type: none;
@@ -27,6 +33,7 @@ ul.topnav li a {
   -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
   padding: 14px 16px;
+  margin: 0px .5px;
   text-decoration: none;
   position: relative;
   -webkit-transition-property: color;
@@ -270,7 +277,7 @@ ul.topnav li.right {
   width: 50%;
 }
 
-/* set everything on page to same font */
+/* set everything on page to same font 
 html,
 body,
 h1,
@@ -283,6 +290,7 @@ h6 {
   font-style: normal;
   box-sizing: border-box;
 }
+*/
 h1,
 h2,
 h3,
@@ -328,6 +336,11 @@ h2 {
 }
 .powwr_img {
   padding-bottom: 15px;
+  height: auto;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+.ping_pong_img {
   height: auto;
   max-width: 100%;
   box-sizing: border-box;
