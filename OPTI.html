@@ -40,7 +40,78 @@
       </li>
     </ul>
     <div class="w3-container w3-animate-bottom">
-      
+      <h2>
+        August 2018 - Present
+      </h2>
+      <div class="col-8">
+      <p class="main">
+        I continued my internship at ISO New England from the summer into the school year.
+        ISO New England is a not-for-profit organizaton that
+        operates the New England power grid, ensuring reliable flow of energy.  I switched from IT-Day Ahead Support to Operations Performance,
+        Training & Integration (OPTI). OPTI is a department whose main job is to support the operators in the
+        control room. They support tools that the operators are using every single day. 
+      </p>
+      <p class="main">
+        Winter was approaching very quickly and the team had still not finished their tool for the fuel and emissions
+        survey responses. These surveys are used to keep track of how much oil or coal are being used and held in 
+        New England generators. When the cold months hit, these survey responses are generated into a report that is 
+        created weekly. My first project was to help finish this tool before these reports were needed weekly. The first
+        task was to create various views to separate the data within the database needed for pages in the report.  
+      </p>
+      <p class="main">
+        I altered an existing table in the database that held the survey questions to include check boxes to distiguish whether
+        the question were talking about maximum or current coal or oil. This helped me modify the existing tool in VBA 
+        to automatically grab these responses from the survey and import the data into their corresponding tables within the 
+        database. To prevent duplications, the values were first checked to see if they already existed. If the values did not exist,
+        the database was updated to mark the old values deleted with a deletion note containing a reason why it was being deleted, who
+        it was being deleted by, and the date. This is very important to identify the amount of fuel still remaining in each generator and
+        determine how long they can continue to run.  
+      </p>
+      <p class="main">
+        The weekly fuel and emissions reports consisted of charts and graphs for the operators to have and review. I contributed to this report 
+        by implementing automation of a bar chart graph through VBA. The graph displayed each generator with their fuel availability, 
+        the date they will run out of fuel, when they ordered more fuel, and lastly how long that fuel they ordered will last.
+        I also wrote a program that goes through the database view I created for any additional comments the generators have and
+        combined multiple comments into one entry by generator name without duplicating entries. The combined comments were copied
+        into an excel sheet that was exported on the report through XSLT and XML. Lastly, I modified an existing XSLT code to highlight 
+        stations at risk due to their availability in the table. They were either highlighted in yellow or red depending on how low 
+        they were on fuel. 
+      </p>
+      <p class="main">
+        By using an existing Excel sheet, I created a program that grabs the information from the sheet and
+        imports the data into the database. The code iterated through the sheets in the workbook matching the assetID of the generators with 
+        the assetID's in the database to confirm they were the same. If they were the same, it would then check the corresponding generators 
+        primary and alternate fuel against one of the views I wrote. Depending on which fuel the generator used, it would then iterate through 
+        the consumable's fuel type checking whether a consumption rate value existed or not. If there was a value, it would check the database to see
+        if the same value already exists. If it did not, it would mark the old value as deleted and imported the new value in the corresponding table. 
+        I later modified this code due to us creating a new template excel sheet to be used. The new template was set up differently, it no longer
+        held information about alternate and primary fuel. ~~ review notes to write more.
+      </p>
+      <p class="main">
+        To keep track of the progress on projects, OPTI was using a tool in which used a userform to store information on an excel sheet. I was asked 
+        to modify this tool by using a database to store the data rather than an excel sheet. I structured a database from scratch by looking at how 
+        the tool was used currently. I designed an entity relationship diagram and presented it to my supervisor and a co-worker. We went over the design 
+        together to ensure things were linked together properly to allow me to begin creating it. I created the database using Microsoft Access. I then moved
+        onto modifying the tool in VBA to grab the data from the userform and store it into the database. I designed user functionality to create, save, edit, 
+        and load exsting data for projects. I added all the userform questions into the database to heavily test my new tool, ensuring there were no bugs and 
+        no data was being saved as a duplicate value. My supervisor then tested the tool with real data to ensure it was working properly and looked the way
+        he wanted. 
+      </p>
+      <p class="main">
+        All members of the OPTI department were asked to become familiar with various market system engines. The task was to gather, analyze and present data 
+        for the run time of these engines. This was done by looking through tables within the database to find the start and end time for the corresponding study mode
+        and case ID number. Each engine had a unique study mode and case ID. Once finding the tables that held the information needed, I created a query to join them and 
+        pull the numbers. I imported them onto an excel sheet where I subtracted the start from end to find the total run time. I then graphed the run time 
+        for all of 2018 to see if there were any outliers or how the tool was working in general. 
+      </p>
+      <p class="main">
+        Due to the new fuel and emissions database being finished, there was necessary clean up for the old database and tool. My next task was to remove the fuel survey 
+        button from the old tool completely. This consisted of deleting VBA code and deleting queries within the database. To ensure all unnecessary queries were removed 
+        from the database, I went through the tool checking which queries were used or not. Once I documented all of them, I checked the object dependies to make sure the 
+        unused queries were not being depended on ones needed. Once thoroughly checking, I began deleting them and checking each button on the tool to make sure they were 
+        all still working properly. After removing them, I started to delete code that was no longer needed or simply was not being used. 
+      </p>
+      </div>
     </div>
   </body>
 </html>

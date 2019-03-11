@@ -8,6 +8,7 @@ body {
   line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 300px)/(1600 - 300)));
   background: url(/Background/fresh_snow/fresh_snow.png) repeat 0 0;
 }
+
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Corben', Georgia, Times, serif;
 }
@@ -34,7 +35,7 @@ ul.topnav li a {
   -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
   padding: 14px 16px;
-  margin: 0px 0px 0px .4px;
+  margin: 0px 0px 0px .2px;
   text-decoration: none;
   position: relative;
   -webkit-transition-property: color;
@@ -332,7 +333,7 @@ h2 {
 .about_icons {
   padding: 14px 16px;
   height: auto;
-  max-width: 25%;
+  width: 25%;
   box-sizing: border-box;
 }
 .powwr_img {
