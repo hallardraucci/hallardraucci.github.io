@@ -376,3 +376,8 @@ h2 {
   box-sizing: border-box;
   border-radius: 50%;
 }
+.CSE_pic {
+  height: auto;
+  width: 100%;
+  box-sizing: border-box;
+}
