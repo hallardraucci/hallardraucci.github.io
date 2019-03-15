@@ -71,15 +71,6 @@ ul.topnav li a:hover:not(.active):before, ul.topnav li a:focus:before {
   -webkit-transform: scaleY(1);
   transform: scaleY(1);
 }
-/* mouse hover when its not the active tab */
-/*
-ul.topnav li a:hover:not(.active) {
-  background-color: white;
-  color: black;
-  cursor: pointer;
-  transition: 0.4s;
-}
-*/
 /* sets format of active tab */
 ul.topnav li a.active {
   background-color: black;
@@ -95,14 +86,6 @@ ul.topnav li.right {
   overflow: hidden;
   text-align: center;
 }
-/*
-
-.dropbtn:hover:not(.active) {
-  background-color: white;
-  color: black;
-  cursor: pointer;
-}
-*/
 /* display format */
 .dropdown-content {
   display: block;
@@ -125,14 +108,6 @@ ul.topnav li.right {
   text-align: left;
   border-right: none;
 }
-/* color on hover of dropdown */
-/*
-.dropdown-content a:hover {
-  background-color: #ddd;
-  display: block;
-
-}
-*/
 .dropdown:hover .dropdown-content {
   opacity: 1;
   visibility: visible;
@@ -152,11 +127,41 @@ ul.topnav li.right {
   float: left;
   padding: 15px;
 }
+[class*="img-"] {
+  height: auto;
+  box-sizing: border-box;
+}
 
 @media only screen and (max-width: 700px) {
   ul.topnav li.right, ul.topnav li, ul.topnav li a {
     float: none;
     border-right: none;
+  }
+  .img-1 {
+    width: 100%;
+  }
+  .img-2 {
+    width: 80%;
+    border-radius: 50%;
+  }
+  .img-3 {
+    width: 30%;
+  }
+  .img-4 {
+    width: 100%;
+    padding-top: 20px;
+  }
+  .img-5 {
+    width: 100%;
+    border-radius: 25%;
+  }
+  .img-6 {
+    width: 100%;
+    padding-top: 20px;
+  }
+  .img-7 {
+    width: 100%;
+    padding-bottom: 20px;
   }
   .col-1 {
     width: 100%;
@@ -196,6 +201,32 @@ ul.topnav li.right {
   }
 }
 @media only screen and (min-width: 700px) {
+  .img-1 {
+    width: 100%;
+  }
+  .img-2 {
+    width: 80%;
+    border-radius: 50%;
+  }
+  .img-3 {
+    width: 25%;
+  }
+  .img-4 {
+    width: 100%;
+    padding-top: 20px;
+  }
+  .img-5 {
+    width: 100%;
+    border-radius: 25%;
+  }
+  .img-6 {
+    width: 80%;
+    padding-top: 20px;
+  }
+  .img-7 {
+    width: 100%;
+    padding-bottom: 20px;
+  }
   .col-1 {
     width: 8.33%;
   }
@@ -234,6 +265,32 @@ ul.topnav li.right {
   }
 }
 @media only screen and (min-width: 1100px) {
+  .img-1 {
+    width: 100%;
+  }
+  .img-2 {
+    width: 80%;
+    border-radius: 50%;
+  }
+  .img-3 {
+    width: 25%;
+  }
+  .img-4 {
+    width: 100%;
+    padding-top: 20px;
+  }
+  .img-5 {
+    width: 100%;
+    border-radius: 25%;
+  }
+  .img-6 {
+    width: 80%;
+    padding-top: 20px;
+  }
+  .img-7 {
+    width: 100%;
+    padding-bottom: 20px;
+  }
   .col-1 {
     width: 8.33%;
   }
@@ -276,7 +333,6 @@ ul.topnav li.right {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
 }
 
 /* set everything on page to same font 
@@ -317,67 +373,4 @@ h2 {
   padding-bottom: 5px;
   display: inline-block;
 }
-.uconn_selfie {
-  height: auto;
-  max-width: 100%;
-  box-sizing: border-box;
-  border-radius: 25%;
-}
-.iso_interns {
-  padding-top: 10px;
-  padding: 16px 16px;
-  height: auto;
-  width: 80%;
-  box-sizing: border-box;
-}
-.about_icons {
-  padding: 14px 16px;
-  height: auto;
-  width: 25%;
-  box-sizing: border-box;
-}
-.powwr_img {
-  padding-bottom: 15px;
-  height: auto;
-  max-width: 100%;
-  box-sizing: border-box;
-}
-.ping_pong_img {
-  height: auto;
-  max-width: 100%;
-  box-sizing: border-box;
-}
-.day_img {
-  height: auto;
-  max-width: 100%;
-  box-sizing: border-box;
-}
-.forecast_img {
-  padding: 15px 15px;
-  height: auto;
-  max-width: 100%;
-  box-sizing: border-box;
-}
-.senior_group {
-  height: auto;
-  max-width: 100%;
-  box-sizing: border-box;
-}
-.cc_photo {
-  height: auto;
-  max-width: 100%;
-  box-sizing: border-box;
-  padding-top: 20px;
-}
-/* ovals out photo */
-.img2 {
-  height: auto;
-  width: 80%;
-  box-sizing: border-box;
-  border-radius: 50%;
-}
-.CSE_pic {
-  height: auto;
-  width: 100%;
-  box-sizing: border-box;
-}
+
