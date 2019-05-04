@@ -30,7 +30,7 @@
           <img src="/ICons/magw.png" class="icons" />Experience in Depth
         </a>
           <div class="dropdown-content">
-            <a href="OPTI.html">Operations Performance, Training & Integration</a>
+            <!--<a href="OPTI.html">Operations Performance, Training & Integration</a> -->
             <a href="DayAhead.html">IT Day-Ahead</a>
             <a class="active" href="Forecasting.html">Energy Load Forecasting Project</a>
             <a href="DataEngineer.html">Data Engineer</a>
@@ -41,9 +41,10 @@
     </ul>
     <div class="w3-container w3-animate-bottom">
     <h2>
-      September 2018 - Present
+      September 2018 - April 2019
     </h2>
     <div class="col-8">
+      <h4> UConn Senior Design Project</h4>
       <p class="main">
         POWWR provides a forecast up to 30 days out using weather-responsive
         load forecast algorithms to give clients visibilty into future energy
@@ -54,9 +55,9 @@
         the ever-changing account mix of a client.
       </p>
       <p class="main">
-        The basis of the first semester for Senior Design 1 was to create a
+        The basis of the first semester for Senior Design 1 was to create a top-down
         model that could predict future energy consumption in megawatt hours
-        (MwH). To do this we utilized a machine learning technique called
+        (MwH) in a regional level. To do this we utilized a machine learning technique called
         regression. This allows the model to predict future values based on
         similar record usage from the past. We strictly used recorded hourly
         usage and weather data from the past to form this model. Partitions
@@ -94,22 +95,26 @@
         improvement from our goal of 10% error. 
       </p>
       <p class="main">
-        Throughout this project we learned how to use many tools and
-        technologies to help us complete the model such as: agile methodology,
-        Bitbucket, Google Cloud Platform, Microsoft Teams, and Jupyter Notebook.
-        We used agile methodology to create tickets through Jira for the tasks
-        we needed to complete for the model and assigned them to individuals in
-        the team. This helped us remain organized on the work being completed.
-        We met with POWWR weekly through a Zoom video conference to discuss the
-        work we had completed in the previous week and go over the next steps in
-        our project. We utilized these meetings to ask questions, demo work, and
-        keep POWWR informed with our school requirements for the project.
+        Similarly to the top-down model, we wanted to predict future energy usage, but,
+        at a client level rather than regional level for semester two. We merged weather
+        data from all local weather stations for specific clients. Then we went through 
+        a process of feature selection to determine which weather variables should be 
+        included in our models. This led to eight different models being created. Each model
+        used various combinations of weather attributes and dimensionality reduction techniques to
+        preprocess the data in different ways. We then proceeded to partition, train, fine-tune,
+        and test similarly to the top down model. After comparing the results for all eight models, 
+        we found that a model containing six weather variables with season partitioning performed the best.
+        Although these results were not as consisted as the first semester, we found that in general our
+        results were comparable.
       </p>
-      <p class="main">
-        This semester we will move on in creating an additional model using data
-        for larger load zones. This will force us to group weather station data by
-        zone to find their average temperature and hourly usage data.
-      </p>
+            <p class="main">
+              Throughout this project we learned how to use many tools and
+              technologies to help us complete the models such as: agile methodology,
+              Bitbucket, Google Cloud Platform, Microsoft Teams, and Jupyter Notebook.
+              Another technique we learned how to do through this class was how to work in a 
+              team. This was our most difficult experience for the project.
+            </p>
+            <h4 style="text-align: center"> Thank you POWWR for being our sponsor!</h4>
     </div>
         <div class="col-4">
           <h2>
@@ -120,6 +125,10 @@
             Pictured left to right: Vickram Tulsie, Hayley Allard-Raucci, Jeffrey
             Eng, Alex Masi
           </p>
+          <h2>
+            Demonstration Day 2019
+          </h2>
+          <img src="Pictures/demo_day.jpg" class="img-1" />
         </div>
         </div>
   </body>
