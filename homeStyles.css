@@ -15,6 +15,23 @@ h1, h2, h3, h4, h5, h6 {
 p {
     font-family: 'Nobile', Helvetica, Arial, sans-serif;
 }
+div.gallery {
+  margin: 20px;
+  border: 1px solid #c19a6b;
+  float: left;
+  width: 180px;
+}
+div.gallery:hover {
+  border: 1px solid #70552f;
+}
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
 /* top navigation bar */
 ul.topnav {
   list-style-type: none;
