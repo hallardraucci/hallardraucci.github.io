@@ -1,126 +1,204 @@
 <html>
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hayley Allard-Raucci</title>
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-        <link href="http://fonts.googleapis.com/css?family=Corben:bold" rel="stylesheet" type="text/css">
-        <link href="http://fonts.googleapis.com/css?family=Nobile" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="homeStyles.css" />
-  </head>
-  <body>
-    <div class="header">
-      <h1>ISO New England: Operations Performance, Training & Integration</h1>
-    </div>
-    <ul class="topnav">
-      <!-- includes tabs that user can flip through-->
-      <li><a href="index.html">
-          <img src="/ICons/houseb.png" class="icons" />Home</a></li>
-      <li><a href="about.html">
-          <img src="/ICons/infob.png" class="icons" />About</a>
-      </li>
-      <li><a href="contact.html">
-          <img src="/ICons/mailb.png" class="icons" />Contact</a>
-      </li>
-      <li><a href="/Resume/resume.pdf" target="_blank">
-          <img src="/ICons/pdfb.png" class="icons" />Resume</a>
-      </li>
-      <li>
-        <div class="dropdown">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hayley Allard-Raucci</title>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link href="http://fonts.googleapis.com/css?family=Corben:bold" rel="stylesheet" type="text/css">
+  <link href="http://fonts.googleapis.com/css?family=Nobile" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="homeStyles.css" />
+</head>
+
+<body>
+  <div class="header">
+    <h1>ISO New England: Operations Performance, Training & Integration</h1>
+  </div>
+  <ul class="topnav">
+    <!-- includes tabs that user can flip through-->
+    <li><a href="index.html">
+        <img src="/ICons/houseb.png" class="icons" />Home</a></li>
+    <li><a href="about.html">
+        <img src="/ICons/infob.png" class="icons" />About</a>
+    </li>
+    <li><a href="contact.html">
+        <img src="/ICons/mailb.png" class="icons" />Contact</a>
+    </li>
+    <li><a href="/Resume/resume.pdf" target="_blank">
+        <img src="/ICons/pdfb.png" class="icons" />Resume</a>
+    </li>
+    <li>
+      <div class="dropdown">
         <a class="dropbtn active">
           <img src="/ICons/magw.png" class="icons" />Experience in Depth
         </a>
-          <div class="dropdown-content">
-            <a class="active" href="OPTI.html">Operations Performance, Training & Integration</a>
-            <a href="DayAhead.html">IT Day-Ahead</a>
-            <a href="Forecasting.html">Energy Load Forecasting Project</a>
-            <a href="DataEngineer.html">Data Engineer</a>
-          </div>
+        <div class="dropdown-content">
+          <a class="active" href="OPTI.html">Operations Performance, Training & Integration</a>
+          <a href="DayAhead.html">IT Day-Ahead</a>
+          <a href="Forecasting.html">Energy Load Forecasting Project</a>
+          <a href="DataEngineer.html">Data Engineer</a>
         </div>
-        </div>
-      </li>
-          <li><a href="crochet.html">
-              <img src="/ICons/yarn_b.png" class="icons">Crocheting
-            </a></li>
-    </ul>
-    <div class="w3-container w3-animate-bottom">
-      <h2>
-        August 2018 - Present
-      </h2>
-      <div class="col-8">
+      </div>
+      </div>
+    </li>
+    <li><a href="crochet.html">
+        <img src="/ICons/yarn_b.png" class="icons">Crocheting
+      </a></li>
+  </ul>
+  <div class="w3-container w3-animate-bottom">
+    <h2>
+      August 2018 - May 2019
+    </h2>
+    <div class="col-8">
       <p class="main">
         I continued my internship at ISO New England from the summer into the school year.
         ISO New England is a not-for-profit organizaton that
-        operates the New England power grid, ensuring reliable flow of energy.  I switched from IT-Day Ahead Support to Operations Performance,
+        operates the New England power grid, ensuring reliable flow of energy. I switched from IT-Day Ahead Support to
+        Operations Performance,
         Training & Integration (OPTI). OPTI is a department whose main job is to support the operators in the
-        control room. They support tools that the operators are using every single day. 
+        control room. They support tools that the operators are using every single day.
       </p>
       <p class="main">
         Winter was approaching very quickly and the team had still not finished their tool for the fuel and emissions
-        survey responses. These surveys are used to keep track of how much oil or coal are being used and held in 
-        New England generators. When the cold months hit, these survey responses are generated into a report that is 
-        created weekly. My first project was to help finish this tool before these reports were needed weekly. The first
-        task was to create various views to separate the data within the database needed for the report.  
+        survey responses. These surveys are used to keep track of how much oil or coal are being used and held in
+        New England generators. When the cold months hit, these survey responses are generated into a report that is
+        created weekly or biweekly depending on the month. My first project was to help finish this tool before these
+        reports
+        were needed weekly. The first
+        task was to create various views to separate the data within the database needed for the report. I altered
+        existing
+        tables within the database to include information needed to help modify the tool being used in VBA. The tool
+        would
+        automatically grab these responses from the survey and import the data into their corresponding tables. The
+        weekly fuel
+        and emissions reports consisted of charts and graphs for the operators to have and review. I contributed to
+        this report
+        by implementing automation of a bar chart graph through VBA. The graph displayed each generator with their fuel
+        availability, the date they will run out of fuel, when they ordered more fuel, and lastly how long that fuel
+        they
+        ordered will last. I also wrote a program that combines multiple comments into one entry by generator name
+        without
+        duplicating entries by iterating through the database. The combined comments were copied into an excel sheet
+        that was
+        exported on the report through CSLT and XML. Lastly, I modified an existing XSLT code to highlight stations at
+        risk due
+        to their availability in the table. They were either highlighted in yellow or red depending on how low they
+        were on
+        fuel. These reports were very important during the cold months of the year. I also created a program that would
+        iterate
+        through the sheets of an existing Excel sheet used to keep track of the consumption rates of various consumable
+        fuels
+        for generators and import the data into the database’s corresponding tables. Only values that did not exist
+        would be
+        imported into the corresponding table. I later modified this code to prompt the user to select the file they
+        would like
+        to use to import the data.
+
       </p>
       <p class="main">
-        I altered an existing table within the database that held the survey questions to include check boxes to distiguish whether
-        the question were talking about maximum or current coal or oil. This helped me modify the existing tool in VBA 
-        to automatically grab these responses from the survey and import the data into their corresponding tables within the 
-        database. To prevent duplications, the values were first checked to see if they already existed. If the values did not exist,
-        the database was updated to mark the old values deleted with a deletion note containing a reason why it was being deleted, who
-        it was being deleted by, and the date. This is very important to identify the amount of fuel still remaining in each generator and
-        determine how long they can continue to run.  
+        Once the programs for the reports were completed I moved on to something new. To keep track of the progress on
+        projects, OPTI was using a tool in which used a userform to store information on an excel sheet. I was asked
+        to modify this tool by using a database to store the data rather than an excel sheet. I structured a database
+        from
+        scratch by looking at how
+        the tool was used currently. I designed an entity relationship diagram and presented it to my supervisor and a
+        co-worker. We went over the design
+        together to ensure things were linked together properly to allow me to begin creating it. I created the
+        database using
+        Microsoft Access. I then moved
+        onto modifying the tool in VBA to grab the data from the userform and store it into the database. I designed
+        user
+        functionality to create, save, edit,
+        and load exsting data for projects. I added all the userform questions into the database to heavily test my new
+        tool,
+        ensuring there were no bugs and
+        no data was being saved as a duplicate value. My supervisor then tested the tool with real data to ensure it
+        was
+        working properly and looked the way
+        he wanted.
+
       </p>
       <p class="main">
-        The weekly fuel and emissions reports consisted of charts and graphs for the operators to have and review. I contributed to this report 
-        by implementing automation of a bar chart graph through VBA. The graph displayed each generator with their fuel availability, 
-        the date they will run out of fuel, when they ordered more fuel, and lastly how long that fuel they ordered will last.
-        I also wrote a program that goes through the database view I created for any additional comments the generators have and
-        combined multiple comments into one entry by generator name without duplicating entries. The combined comments were copied
-        into an excel sheet that was exported on the report through XSLT and XML. Lastly, I modified an existing XSLT code to highlight 
-        stations at risk due to their availability in the table. They were either highlighted in yellow or red depending on how low 
-        they were on fuel. 
+        All members of the OPTI department were asked to become familiar with various market system engines. The task
+        was to gather, analyze and present data
+        for the run time of these engines. This was done by looking through tables within the database to find the
+        start and end time for the corresponding study mode
+        and case ID number. Each engine had a unique study mode and case ID. Once finding the tables that held the
+        information needed, I created a query to join them and
+        pull the numbers. I imported them onto an excel sheet where I subtracted the start from end to find the total
+        run time. I then graphed the run time
+        for all of 2018 to see if there were any outliers or how the tool was working in general.
       </p>
       <p class="main">
-        By using an existing Excel sheet, I created a program that grabs the information from the sheet and
-        imports the data into the database. The code iterated through the sheets in the workbook matching the assetID of the generators with 
-        the assetID's in the database to confirm they were the same. If they were the same, it would then check the corresponding generators 
-        primary and alternate fuel against one of the views I wrote. Depending on which fuel the generator used, it would then iterate through 
-        the consumable's fuel type checking whether a consumption rate value existed or not. If there was a value, it would check the database to see
-        if the same value already exists. If it did not, it would mark the old value as deleted and imported the new value in the corresponding table. 
-        I later modified this code due to us creating a new template excel sheet to be used. The new template was set up differently, it no longer
-        held information about alternate and primary fuel. The program now prompts the user to select the file they would like to use and it would then
-        iterate through that excel sheet importing data to corresponding tables.
+        Due to the new fuel and emissions database being finished, there was necessary clean up for the old database
+        and tool. My next task was to remove the fuel survey
+        button from the old tool completely. This consisted of deleting VBA code and deleting queries within the
+        database. To ensure all unnecessary queries were removed
+        from the database, I went through the tool checking which queries were used or not. Once I documented all of
+        them, I checked the object dependies to make sure the
+        unused queries were not being depended on by nes needed. Once thoroughly checking, I began deleting them and
+        checking each button on the tool to make sure they were
+        all still working properly. After removing them, I started to delete code that was no longer needed or simply
+        was not being used. This reduced the clutter of code making
+        it easier to identify a bug if needed.
       </p>
       <p class="main">
-        To keep track of the progress on projects, OPTI was using a tool in which used a userform to store information on an excel sheet. I was asked 
-        to modify this tool by using a database to store the data rather than an excel sheet. I structured a database from scratch by looking at how 
-        the tool was used currently. I designed an entity relationship diagram and presented it to my supervisor and a co-worker. We went over the design 
-        together to ensure things were linked together properly to allow me to begin creating it. I created the database using Microsoft Access. I then moved
-        onto modifying the tool in VBA to grab the data from the userform and store it into the database. I designed user functionality to create, save, edit, 
-        and load exsting data for projects. I added all the userform questions into the database to heavily test my new tool, ensuring there were no bugs and 
-        no data was being saved as a duplicate value. My supervisor then tested the tool with real data to ensure it was working properly and looked the way
-        he wanted. 
+        My next task was to modify an existing tool called the Notification Tracker in C#. This tool had many
+        functionalities
+        including the ability to email recipients from triggered specified notification with regarding information.
+        With my
+        modifications on the C# code and database, the user was now able to choose whether the email recipient would
+        receive
+        the email as a to, CC, and/or BCC. The email was now sent in HTML allowing the user to modify tags to add
+        formatting
+        within the database to make important information stick out to the receivers. Along with automation of tables
+        being
+        created, if necessary, in email notifications. I also added the ability to change the format of dates and
+        numbers
+        within the email. These modifications were tested heavily through various inputs that would break the code
+        without
+        proper error handling. The last task I needed to finish before my internship ended was to create a userform for
+        this
+        existing tool. There needed to be two buttons, one for the control room functionalities and one for the email
+        side. MS
+        Access and Oracle databases were used to obtain the necessary data. The email side functionalities included the
+        ability
+        to add or edit an event from the Oracle database that would trigger a notification. Within this event, the user
+        was
+        able to add/edit/delete email addresses, with the option to change their to/CC/BCC. Depending on the event, a
+        list of
+        existing entry parts for the particular notification from the Oracle database displayed in the userform for the
+        user to
+        add/delete them from the email. The user was also able to edit the email details such as the subject. All the
+        data for
+        the email side was stored in the MS Access database and all changes with a description was logged in a
+        specified table.
+        The control room side was broken up into three userforms following the three tables within the MS Access
+        database:
+        events, notifications, and recipients. These tables are linked by the notification table, identifying the
+        recipients
+        for each event. The operators would use this useform to edit the mapping of the notifications along with the
+        ability to
+        edit/add/delete events and recipients. All changes were logged the same way as the email side.
       </p>
       <p class="main">
-        All members of the OPTI department were asked to become familiar with various market system engines. The task was to gather, analyze and present data 
-        for the run time of these engines. This was done by looking through tables within the database to find the start and end time for the corresponding study mode
-        and case ID number. Each engine had a unique study mode and case ID. Once finding the tables that held the information needed, I created a query to join them and 
-        pull the numbers. I imported them onto an excel sheet where I subtracted the start from end to find the total run time. I then graphed the run time 
-        for all of 2018 to see if there were any outliers or how the tool was working in general. 
+        <i>Thank you ISO New England for an exciting and fun year! I have learned a lot from working with the OPTI team
+          and met many
+          great people who I was lucky enough to work with. I am thankful for the valuable skill set and experience I
+          received here. I want to personally thank my supervisor, Jaren Lutenegger, for being a great supervisor and
+          mentor for me. </i>
+
       </p>
-      <p class="main">
-        Due to the new fuel and emissions database being finished, there was necessary clean up for the old database and tool. My next task was to remove the fuel survey 
-        button from the old tool completely. This consisted of deleting VBA code and deleting queries within the database. To ensure all unnecessary queries were removed 
-        from the database, I went through the tool checking which queries were used or not. Once I documented all of them, I checked the object dependies to make sure the 
-        unused queries were not being depended on ones needed. Once thoroughly checking, I began deleting them and checking each button on the tool to make sure they were 
-        all still working properly. After removing them, I started to delete code that was no longer needed or simply was not being used. 
-      </p>
-      </div>
-      <div class="col-4">
-        <h2>The UConn OPTI Interns</h2>
-        <img src="Pictures/OPTI_Interns.jpg" class="img-1">
-        <p class="main">Toshiro Hackett and I at the Windsor facility, 2019.</p>
-      </div>
     </div>
-  </body>
+    <div class="col-4">
+      <h2>The UConn OPTI Interns</h2>
+      <img src="Pictures/OPTI_Interns.jpg" class="img-1">
+      <p class="main">Toshiro Hackett and I at the Windsor facility, 2019.</p>
+      <h2>OPTI Team</h2>
+      <img src="Pictures/opti_team.jpg" class="img-1">
+      <p class="main"> Pictured left to right: Duncan Leathrum, Jaren Lutenegger, Hayley Allard-Raucci, Stephen George,
+        Hector Nunez, William Bell</p>
+    </div>
+  </div>
+</body>
+
 </html>

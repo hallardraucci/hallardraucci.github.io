@@ -153,6 +153,12 @@ ul.topnav li.right {
     float: none;
     border-right: none;
   }
+  div.gallery {
+    margin-right: auto;
+    margin-left: auto; 
+    display: block;
+    width: 50%;
+  }
   .dropdown-content {
     width: 100%;
   }
