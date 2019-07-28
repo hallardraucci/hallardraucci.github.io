@@ -16,10 +16,7 @@ p {
     font-family: 'Nobile', Helvetica, Arial, sans-serif;
 }
 div.gallery {
-  margin: 10px;
   border: 1px solid #c19a6b;
-  float: left;
-  width: 180px;
 }
 div.gallery:hover {
   border: 1px solid #70552f;
@@ -31,6 +28,16 @@ div.gallery img {
 div.desc {
   padding: 15px;
   text-align: center;
+}
+.responsive {
+  padding: 15px;
+  float: left;
+  width: 20%;
+}
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both; 
 }
 /* top navigation bar */
 ul.topnav {
@@ -153,11 +160,9 @@ ul.topnav li.right {
     float: none;
     border-right: none;
   }
-  div.gallery {
-    margin-right: auto;
-    margin-left: auto; 
-    display: block;
+  .responsive {
     width: 50%;
+    margin: 6px 0;
   }
   .dropdown-content {
     width: 100%;
